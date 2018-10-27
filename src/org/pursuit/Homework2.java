@@ -112,7 +112,6 @@ public class Homework2 implements StartPlay {
         do {
             userInput = scanner.nextLine().toUpperCase();
             if (userInput.equals("CONTINUE")) {
-                //score = score;
                 ifSlapBackContinue();
             } else if (userInput.equals("END")) {
                 System.out.println("\n" + scoreResult().get(score));
