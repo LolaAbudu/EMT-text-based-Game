@@ -29,9 +29,9 @@ public class Homework2 implements StartPlay {
     @Override
     public void startPlay() {
         String userInput;
-       for (int counter = 0; counter < 3; counter++) {
+        for (int counter = 0; counter < 3; counter++) {
             userInput = scanner.nextLine().toUpperCase();
-            if (userInput.equals("YES")) {
+            if (userInput.equals("YES") || userInput.equals("")) {
                 System.out.println("\nOMG here we go!");  //put smiley face here
                 startQuestion();
             } else if (userInput.equals("NO")) {
