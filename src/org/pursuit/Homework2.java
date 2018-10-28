@@ -142,12 +142,12 @@ public class Homework2 implements StartPlay {
                 playAgain();
             } else if (letter == 'B') {
                 score = score - 30;
-                System.out.println("\nAlthough you got Oxygen correct, physical retaliation against any patient is NOT acceptable!");
+                System.out.println("\nWrong! Also, physical retaliation against any patient is NOT acceptable!");
                 System.out.println(scoreResult().get(score));
                 playAgain();
             } else if (letter == 'C') {
                 score = score - 30;
-                System.out.println("\nAlthough you got Oxygen correct, physical retaliation against any patient is NOT acceptable!");
+                System.out.println("\nWrong! Also, physical retaliation against any patient is NOT acceptable!");
                 System.out.println(scoreResult().get(score));
                 playAgain();
             } else if (letter == 'D') {
