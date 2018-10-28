@@ -251,21 +251,30 @@ public class Homework2 implements StartPlay {
             switch (userInput) {
                 case "A":
                     score = score - 30;
+                    System.out.println("Wrong! The Femoral artery is located in your thigh, " +
+                            "although it is a major artery with a huge blood supply, it is not " +
+                            "located in your neck");
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "B":
                     score = score - 30;
+                    System.out.println("Wong! The Brachial artery is also a major artery but " +
+                            "located in your upper arm");
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "C":
                     score = score + 30;
+                    System.out.println("Correct! The Carotid artery is located in both sides of " +
+                            "your neck and if cut, you can bleed to death in about 2-4 minutes");
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "D":
                     score = score - 30;
+                    System.out.println("Wrong! The Radial artery is also a major artery but it is " +
+                            "located in your forearm");
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
@@ -572,25 +581,29 @@ public class Homework2 implements StartPlay {
         while (!userInput.equals("A") || !userInput.equals("B") || !userInput.equals("C") || !userInput.equals("D")) {
             switch (userInput) {
                 case "A":
-                    System.out.println("\n... ");
+                    System.out.println("\nWrong! Although all arteries carry de-oxygenated blood," +
+                            " Brachial artery comes from your upper arm");
                     score = score - 30;
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "B":
-                    System.out.println("\n... ");
+                    System.out.println("\nWrong! Although all arteries carry de-oxygenated blood," +
+                            " Carotid artery comes from your head and neck area");
                     score = score - 30;
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "C":
-                    System.out.println("\nCorrect!");
+                    System.out.println("\nCorrect! Pulmonary artery carries de-oxygenated blood " +
+                            "back to the lungs from the heart in order to get re-oxygenated");
                     score = score + 30;
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
                 case "D":
-                    System.out.println("\n... ");
+                    System.out.println("\nWrong! Wrong! Although all arteries carry de-oxygenated" +
+                            " blood, Radial artery comes from your forearm");
                     score = score - 30;
                     System.out.println(scoreResult().get(score));
                     playAgain();
