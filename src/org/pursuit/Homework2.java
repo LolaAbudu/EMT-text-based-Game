@@ -107,7 +107,7 @@ public class Homework2 implements StartPlay {
     public void slapBack() {
         String userInput;
         System.out.println("\nWelp! you might as well surrender your chances now." +
-                "\nI would suggest not wasting your time but if you would like to " +
+                "\nI would suggest not wasting your time but if you would like some bonus points and " +
                 "increase your chances, type 'Continue' \nor type 'End' to get your Analysis.");
         do {
             userInput = scanner.nextLine().toUpperCase();
@@ -171,8 +171,8 @@ public class Homework2 implements StartPlay {
             userInput = scanner.nextLine().toUpperCase();
             if (userInput.equals("LIE")) {
                 System.out.println("\nMy mechanical assumption tells me that you might have a " +
-                        "high likelihood of seriously\ninjuring a patient but if you would like to" +
-                        "increase your chances, type 'Continue' or type 'End' to get your Analysis.");
+                        "high likelihood of seriously\ninjuring a patient but if you would like some" +
+                        " bonus points, type 'Continue' or type 'End' to get your Analysis.");
                 score = score - 40;
                 userInput = scanner.nextLine().toUpperCase();
                 if (userInput.equals("CONTINUE")) {
@@ -285,10 +285,13 @@ public class Homework2 implements StartPlay {
         } while (true);
     }
 
+    //but if you would like some" +
+    //                        " bonus points, type 'Continue'
     public void dealAlone() {
         String userInput;
-        System.out.println("\nIts on and poppin now! You have made wrong choices until now but everyone deserves a try. " +
-                "For one more shot, type 'Continue' or type 'End' to get your Analysis.");
+        System.out.println("\nIts on and poppin now! You have made wrong choices until now but " +
+                "everyone deserves a try. \nFor one more shot at bonus points, type 'Continue' " +
+                "or type 'End' to get your Analysis.");
         do {
             userInput = scanner.nextLine().toUpperCase();
             if (userInput.equals("CONTINUE")) {
@@ -315,7 +318,7 @@ public class Homework2 implements StartPlay {
             switch (userInput) {
                 case "A":
                     score = score - 20;
-                    System.out.println("\nYou are right but WRONG, bilateral simply means both sides of the body");
+                    System.out.println("\nYou are right but WRONG, bilateral simply means both sides of the body not just lungs");
                     System.out.println(scoreResult().get(score));
                     playAgain();
                     break;
@@ -410,7 +413,7 @@ public class Homework2 implements StartPlay {
         String userInput;
         System.out.println("\nI am sorry but my professional analysis suggests that " +
                 "you should possibly not become an EMT nor a Cop \nnor anything of " +
-                "authority. " + "\nBut if you " + "would like some bonus points, " +
+                "authority. " + "\nBut if you would like some bonus points, " +
                 "type 'Continue' or type 'End' to get your Analysis.");
         do {
             userInput = scanner.nextLine().toUpperCase();
@@ -493,7 +496,7 @@ public class Homework2 implements StartPlay {
 
     public void stop() {
         String userInput;
-        System.out.println("\nYou are doing amazing, but for extra Bonus, type 'Continue' " +
+        System.out.println("\nYou are doing amazing, but for extra Bonus points, type 'Continue' " +
                 "or type 'End' to get your Analysis.");
         do {
             userInput = scanner.nextLine().toUpperCase();
